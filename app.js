@@ -1,0 +1,1 @@
+document.getElementById("regTab").style = "background-color: rgba(27, 27, 50, 0.8) !important;";

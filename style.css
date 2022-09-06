@@ -1,0 +1,105 @@
+body {
+    background-image: linear-gradient( 115deg, rgba(72, 69, 84, 0.87), rgba(136, 136, 206, 0.7) ), url(https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #f3f3f3;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+form,.card-container{
+    width: 500px;
+    padding: 3rem;
+    background: rgba(27, 27, 50, 0.8);
+    display: block;
+    border-radius: 0.25rem;
+    padding: 3.5rem;
+}
+.navbar>div{
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+}
+.navbar{
+    width: 50rem;
+    height: auto;
+}
+#tag-line{
+    font-size: medium;
+    color: #afafaf;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.085rem;
+}
+.navtab{
+    background-color: #495057;
+    padding: 10px;
+    margin: 2px 2px 0px 2px;
+}
+.input-label, .input-box, .dropdown-menu{
+    width: 700px;
+    padding: 10px 0px;
+}
+form,.card-container{
+    width: 800px;
+    margin: 0px auto;
+}
+.input-box,option{
+    border: 1px solid #328899;
+    border-radius: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    color: #495057;
+}
+.dropdown{
+    margin: 15px auto;
+}
+.dropdown-toggle:hover{
+    background-color: #666666;
+}
+.submit-button{
+    display: block;
+    width: 30rem;
+    padding: 10px 0px;
+    margin: 30px auto 0 auto;
+    background: #27617C;
+    color: inherit;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+}
+select{
+    cursor: pointer;
+}
+.submit-button:hover{
+    background:#328899;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    color: #328899;
+}
+/*CARD STYLING*/
+.field{
+    margin: 0px auto;
+    text-align: center;
+}
+.card-wrapper{
+    margin: 0px auto;
+    background-color: #328899;
+    padding: 2.5rem;
+    width: 350px;
+}
+.field{
+    max-width: 180px;
+}

@@ -1,0 +1,1 @@
+document.getElementById("idTab").style = "background-color: rgba(27, 27, 50, 0.8) !important;";
