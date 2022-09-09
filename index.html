@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta id="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -23,14 +23,14 @@
   </div>
     <!--input fields-->
     <form>
-        <select name="city" class="input-box mb-4" required>
+        <select id="city" class="input-box mb-4" required>
           <option disabled selected value>Select City</option>
           <option value="Karachi">Karachi</option>
           <option value="Lahore">Lahore</option>
           <option value="Islamabad">Islamabad</option>
           <option value="Multan">Multan</option>
         </select>
-        <select name="course" class="input-box mb-2" required>
+        <select id="course" class="input-box mb-2" required>
           <option disabled selected value>Select Course</option>
           <option value="Graphic Designing">Graphic Designing</option>
           <option value="Web and Mobile App development">Web and Mobile App development</option>
@@ -38,19 +38,19 @@
           <option value="Artificial Intelligence">Artificial Intelligence</option>
         </select>
         <label for="name" class="input-label">Full Name</label>
-        <input type="text" class="input-box" name="name" placeholder="enter your name" required>
+        <input type="text" class="input-box" id="name" placeholder="enter your name" required>
         <label for="fname" class="input-label">Father's/ Guardian Name</label>
-        <input type="text" class="input-box" name="fname" placeholder="enter your father name" required>
+        <input type="text" class="input-box" id="fname" placeholder="enter your father name" required>
         <label for="email" class="input-label">Email</label>
-        <input type="email" class="input-box" name="email" placeholder="example@xyzmail.com" required>
+        <input type="email" class="input-box" id="email" placeholder="example@xyzmail.com" required>
         <label for="contact" class="input-label">Contact</label>
-        <input type="text" class="input-box" name="contact" placeholder="03211234567" required>
+        <input type="text" class="input-box" id="contact" placeholder="03211234567" required>
         <label for="cnic" class="input-label">CNIC</label>
-        <input type="text" class="input-box" name="CNIC" placeholder="xxxxx-xxxxxxx-x" required>
+        <input type="text" class="input-box" id="cnic" placeholder="xxxxx-xxxxxxx-x" required>
         <label for="fcnic" class="input-label">Father's CNIC</label>
-        <input type="text" class="input-box" name="fncic" placeholder="xxxxx-xxxxxxx-x" required>
+        <input type="text" class="input-box" id="fcnic" placeholder="xxxxx-xxxxxxx-x" required>
 
-        <button type="submit" id="submit" class="submit-button">Submit</button>
+        <button id="submit" class="submit-button">Submit</button>
     </form>
 
     <script src="app.js"></script>
