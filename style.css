@@ -16,8 +16,6 @@ body {
     align-items: center;
 }
 form,.card-container{
-    width: 500px;
-    padding: 3rem;
     background: rgba(27, 27, 50, 0.8);
     display: block;
     border-radius: 0.25rem;
@@ -59,13 +57,16 @@ form,.card-container{
     padding-right: 8px;
     color: #495057;
 }
+.input-box:focus{
+    border: 1px solid #328899;
+}
 .dropdown{
     margin: 15px auto;
 }
 .dropdown-toggle:hover{
     background-color: #666666;
 }
-.submit-button{
+#submitBtn{
     display: block;
     width: 30rem;
     padding: 10px 0px;
@@ -79,7 +80,7 @@ form,.card-container{
 select{
     cursor: pointer;
 }
-.submit-button:hover{
+#submitBtn:hover{
     background:#328899;
 }
 a{
@@ -101,5 +102,51 @@ a:hover{
     width: 350px;
 }
 .field{
-    max-width: 180px;
+    min-width: 180px;
+    max-width: 280px;
+}
+@media (max-width:860px) {
+    .input-label, .input-box, .dropdown-menu{
+        width: 500px;
+        padding: 5px 0px;
+    }
+    form,.card-container{
+        width: 600px;
+    }
+    .navbar{
+        width: 40rem;
+    }
+    #submitBtn{
+        width: 20rem;
+    }
+}
+@media (max-width:600px) {
+    .input-label, .input-box, .dropdown-menu{
+        width: 300px;
+        padding: 5px 0px;
+    }
+    form,.card-container{
+        width: 550px;
+    }
+    .navbar{
+        width: 30rem;
+    }
+    #submitBtn{
+        width: 17rem;
+    }
+}
+@media (max-width:500px) {
+    .input-label, .input-box, .dropdown-menu{
+        width: 350px;
+        padding: 5px 0px;
+    }
+    form,.card-container{
+        width: 480px;
+    }
+    .navbar{
+        width: 25rem;
+    }
+    #submitBtn{
+        width: 14rem;
+    }
 }

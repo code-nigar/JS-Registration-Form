@@ -1,6 +1,6 @@
 document.getElementById("idTab").style = "background-color: rgba(27, 27, 50, 0.8) !important;";
 
-var getName, getFname, getCNIC, getFCNIC, getCity, getCourse, getContact, getMail;
+var getName, getFname, getCNIC, getFCNIC, getCity, getCourse, getContact, getMail, getImg;
 
 getName = localStorage.getItem("StudentName");
 getCNIC = localStorage.getItem("CNIC");
@@ -10,7 +10,9 @@ getCity = localStorage.getItem("city");
 getCourse = localStorage.getItem("course");
 getContact = localStorage.getItem("contact");
 getMail = localStorage.getItem("mail");
+getImg = localStorage.getItem('imageStored');
 
+document.getElementById("imagedisplay").src = getImg;
 document.getElementById("name").innerHTML = getName;
 document.getElementById("idnumber").innerHTML = getCNIC;
 document.getElementById("course").innerHTML = getCourse;

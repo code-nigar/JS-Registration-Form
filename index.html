@@ -13,7 +13,7 @@
     <!--header-->
     <div  class="navbar navbar-dark bg-dark px-3 shadow p-3 m-5 rounded d-flex flex-column justify-content-center">
         <h1 id="brand-title">Modern Tech Academy</h1>
-        <div id="tag-line">Course Registartion Form</div>
+        <div id="tag-line">Learn and Earn</div>
     </div>
     <!--navtabs-->
     <div  id="navtab-collection" class="d-flex flex-row justify-content-around">
@@ -22,7 +22,7 @@
       <div class="navtab "><a href="result.html">Results</a></div>
   </div>
     <!--input fields-->
-    <form>
+    <form id="regForm" action="idcard.html" onsubmit="return validate()">
         <select id="city" class="input-box mb-4" required>
           <option disabled selected value>Select City</option>
           <option value="Karachi">Karachi</option>
@@ -44,13 +44,15 @@
         <label for="email" class="input-label">Email</label>
         <input type="email" class="input-box" id="email" placeholder="example@xyzmail.com" required>
         <label for="contact" class="input-label">Contact</label>
-        <input type="text" class="input-box" id="contact" placeholder="03211234567" required>
+        <input type="text" class="input-box" id="contact" placeholder="xxxx-xxxxxxx" required>
         <label for="cnic" class="input-label">CNIC</label>
         <input type="text" class="input-box" id="cnic" placeholder="xxxxx-xxxxxxx-x" required>
         <label for="fcnic" class="input-label">Father's CNIC</label>
         <input type="text" class="input-box" id="fcnic" placeholder="xxxxx-xxxxxxx-x" required>
+        <label for="fcnic" class="input-label">Upload Image</label>
+        <input type="file" id="docpicker" accept="image/*" onchange="encodeImageFileAsURL();" required>
 
-        <button id="submit" class="submit-button">Submit</button>
+        <button type="submit" id="submitBtn">Submit</button>
     </form>
 
     <script src="app.js"></script>
